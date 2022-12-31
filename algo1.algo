@@ -1,0 +1,103 @@
+ALGORITHM Sentence 
+ var 
+    str : string 
+    nb_c, nb_w, nb_v : INTEGER := 0
+    i := 0
+
+BEGIN
+
+    write("This Is My Sentence.")
+    read(str)
+
+    WHILE (str(i) <> ".") DO
+        
+            nb_c = nb_c + 1 
+
+        IF (str(i) = " ") THEN
+            
+            nb_w = nb_w + 1
+
+        END_IF
+
+        IF (str(i) = "a", "e", "i", "y", "o", "u") THEN
+            
+            nb_v = nb_v + 1
+
+        END_IF
+
+
+        i = i + 1 
+
+
+    END_WHILE
+
+    write(nb_c)
+    write(nb_w)
+    write(nb_v)
+
+
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ALGORITHM choura7bil
+VAR
+    str : STRING
+    NB_W , NB_C , NB_V : INTEGER := 0
+    i : INTEGER
+BEGIN
+    write("write a sentence")
+    read(str)
+    
+    WHILE (str(i) <> ".") DO
+        
+        NB_C = NB_C + 1
+
+        IF (str(i) = ("a" , "e" , "i" , "y" , "u" , "o") ) THEN
+            NB_V = NB_V +1
+        END_IF
+
+        IF (str(i) = " ") THEN
+            NB_W = NB_W +1
+        END_IF
+         
+        i++
+    END_WHILE
+
+    write(NB_W)
+    write(NB_C)
+    write(NB_V)
+
+END
